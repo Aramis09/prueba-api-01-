@@ -7,9 +7,9 @@ const server = express();
 server.name = "API";
 
 
-const origins = ["http://localhost:5173","*"];
+const origins = ["http://localhost:5173","*","https://tecnicaaramis.netlify.app"];
 server.use(cors({
-	origin:origins[0],
+	origin:origins[2],
 	credentials: true 
 }));
 
